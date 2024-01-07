@@ -4,7 +4,10 @@ from rest_framework.views import  APIView
 from .models import *
 from .serializer import *
 # Create your views here.
+
+
+
 class AuthViewSet(viewsets.ModelViewSet):
     queryset=Author.objects.all()
-    serializer_class=AuthorSerializers
+    serializer_class=AuthorSerializer
     
